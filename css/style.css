@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sours sans pro;
+}
+header {
+    background: url(../images/banner.jpg);
+    color: white;
+    min-height: 250px;
+    padding: 30px 0;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    /* z-index: -1; */
+}
+ 
+header::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #1f2542;
+    /* z-index: -1; */
+    opacity: 0.4;
+
+}
+
+ .container {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    z-index: 1;
+}
+
+.container h1{
+    border-bottom: 3px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+.container-bottom {
+    display: flex;
+    align-items: center;
+}
+
+
+.container-bottom p{
+    width: 50%;
+
+}
+
+
+button{
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s;
+
+} 
+/* second header */
+
+header:nth-of-type(2) button {
+    margin-top: 10px;
+}
+
+button:hover{
+    border-color: skyblue;
+    color: skyblue;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+/* Main */
+main section{
+    height: 200px;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main section::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    opacity: 0.8;
+    transition: 0.3s;
+} 
+
+main section:hover::before {
+    opacity: 0;
+}
+
+
+main section .container{
+    width: 80%;
+    margin: auto;
+    z-index: 1;
+}
+
+main section .container p {
+    border-top: 3px solid white;
+    margin-top: 10px;
+    padding-top:10px ;
+    display: inline-block;
+}
+
+ main .section-1 {
+   background: url(../images/pic01.jpg);
+    background-size: cover;
+   
+    width: 35%;
+}
+
+main .section-1::before {
+       background: #72b2ca;
+  
+ 
+}
+
+main .section-2 {
+    background: url(../images/pic02.jpg);
+     background-size: cover;
+    
+     width: 65%;
+ }
+ 
+ main .section-2::before {
+     
+     background: #8078b0;
+     
+ } 
+ main .section-3 {
+    background: url(../images/pic03.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 65%;
+ }
+
+
+ main .section-3::before {
+     
+    background: #d68c85;
+    
+} 
+
+main .section-4 {
+    background: url(../images/pic04.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 35%; 
+ }
+
+
+ main .section-4::before {
+     
+    background: #d0ac89;
+    
+} 
+main .section-5 {
+    background: url(../images/pic05.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 35%;
+ }
+
+
+ main .section-5::before {
+     
+    background: #7d92c4;
+    
+} 
+
+main .section-6 {
+    background: url(../images/pic06.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 65%;
+ }
+
+ main .section-6::before {
+     
+    background: #74a590;
+    
+} 
+
+
+
+footer {
+    background: #232943;
+    padding: 30px 0;
+
+   
+}
+footer img {
+    width: 30px;
+    height: 30px;
+    background: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+
+footer .container {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+}
+
+footer .container .social {
+    display: flex;
+    gap: 15px;
+}
+
+
+footer .icon {
+    width: 30px;
+    height: 30px;
+    background: white;
+    /* padding: 5px; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+} 
+
+footer .icon:hover {
+    background: #678d81;
+    box-shadow: 0 0 5px white;
+    transform: scale(1.1);
+}
+
+footer .icon img {
+    width: 17px;
+    height: 17px;
+}
+
+
+
+
+
+
+
+
+
+.copyrights {
+    margin-top: 10px;
+    color: white;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    section {
+        width: 50% !important;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    html {
+        font-size:12px;
+    }
+    section {
+        width: 100% !important;
+    }
+}
+
+header .container-bottom {
+    flex-direction: column;
+    align-items: start;
+}
+
+header .container-bottom p {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
