@@ -1,0 +1,123 @@
+
+main {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+/* Main */
+main section{
+    height: 200px;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main section::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    opacity: 0.8;
+    transition: 0.3s;
+} 
+
+main section:hover::before {
+    opacity: 0;
+}
+
+
+main section .container{
+    width: 80%;
+    margin: auto;
+    z-index: 1;
+}
+
+main section .container p {
+    border-top: 3px solid white;
+    margin-top: 10px;
+    padding-top:10px ;
+    display: inline-block;
+}
+
+ main .section-1 {
+   background: url(../images/pic01.jpg);
+    background-size: cover;
+   
+    width: 35%;
+}
+
+main .section-1::before {
+       background: #72b2ca;
+  
+ 
+}
+
+main .section-2 {
+    background: url(../images/pic02.jpg);
+     background-size: cover;
+    
+     width: 65%;
+ }
+ 
+ main .section-2::before {
+     
+     background: #8078b0;
+     
+ } 
+ main .section-3 {
+    background: url(../images/pic03.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 65%;
+ }
+
+
+ main .section-3::before {
+     
+    background: #d68c85;
+    
+} 
+
+main .section-4 {
+    background: url(../images/pic04.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 35%; 
+ }
+
+
+ main .section-4::before {
+     
+    background: #d0ac89;
+    
+} 
+main .section-5 {
+    background: url(../images/pic05.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 35%;
+ }
+
+
+ main .section-5::before {
+     
+    background: #7d92c4;
+    
+} 
+
+main .section-6 {
+    background: url(../images/pic06.jpg);
+     background-size: cover;
+     background-position: center;
+         width: 65%;
+ }
+
+ main .section-6::before {
+     
+    background: #74a590;
+    
+} 
